@@ -1,4 +1,6 @@
 
+import com.mycompany.budgetapp.service.BudgetManager;
+import com.mycompany.budgetapp.service.BudgetService;
 import java.util.Scanner;
 import java.util.Locale;
 import java.text.NumberFormat;
@@ -11,7 +13,8 @@ public class BankApp {
         System.out.println("Welcome to Budget banking, to start please enter your full name.");
         String name = scanner.nextLine().trim(); // captures the full name input 
 
-        BudgetManager manager = new BudgetManager(100.00);
+        // BudgetManager manager = new BudgetManager(100.00);
+        BudgetService manager = new BudgetManager(100.00);
 
         System.out.println("Account Holder: " + name + "Balance: " + currency.format(manager.getBalance()));
         System.out.println();
