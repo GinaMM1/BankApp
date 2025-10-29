@@ -1,5 +1,7 @@
 package com.mycompany.budgetapp.service;
 
+
+
 public interface BudgetService {
 
     void deposit(double amount);
